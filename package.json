@@ -1,0 +1,15 @@
+{
+  "name": "h5p-styling",
+  "version": "1.0.0",
+  "description": "H5P WSU Branding",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch h5p-styles.scss ./build/h5p-styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "L Oaklands",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "sass": "^1.34.1"
+  }
+}
