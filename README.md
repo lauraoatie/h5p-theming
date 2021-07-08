@@ -85,7 +85,7 @@ There are minor instances where the properties `filter` and `gradient` utilise h
 | Variables | Usage |
 | ----------- | ----------- |
 | Primary colours |  |
-|`$black: #262223;`<br/>`$white: #FFFFFF;`<br/>`$primary: #990033;`<br/>`$primary-dar: #c50143;`<br/>`$primary-dar2: #88002d;`<br/>`primary-med: #ec0264;` | <br/><br/>Background colour for buttons and elements.<br/>:hover/:active background or font colour.<br/>:focus  background or font colour.<br/>Gradient background colour. |
+|`$black: #262223;`<br/>`$white: #FFFFFF;`<br/>`$primary: #990033;`<br/>`$primary-dar: #c50143;`<br/>`$primary-dar2: #88002d;`<br/>`$primary-med: #ec0264;` | <br/><br/>Background colour for buttons and elements.<br/>:hover/:active background or font colour.<br/>:focus  background or font colour.<br/>Gradient background colour. |
 | Secondary colours | UI elements |
 |`$white-grey: #FAFAFA;`<br/>`$grey-lig: #DEDEDE;`<br/>`$grey-lig2: #C5C5C5;`<br/>`$grey-lig3: #A2A2A2;`<br/>`$grey-med: #333333;`<br/>`$grey-med2: #3a3537;` | |
 | Correct/Incorrect colours | (not applied to every instance) |
