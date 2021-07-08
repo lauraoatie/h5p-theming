@@ -6,10 +6,10 @@
   * [Deployment to H5P.com](#deployment-to-h5pcom)
   * [Using your own colours](#using-your-own-colours)
       - [Notes](#notes)
-  * [Suggested workflow for developing your own theme](#suggested-workflow-for-developing-your-own-theme)
+  * [Theme expansion](#theme-expansion)
     + [Preparation](#preparation)
-    + [Out of the box](#out-of-the-box)
-    + [Theme expansion](#theme-expansion)
+    + [Guidelines](#guidelines)
+    + [Styling elements](#styling-elements)
   * [FAQs](#faqs)
  
 ## Overview
@@ -56,6 +56,9 @@ $ npm install
 $ npm start
 ```
 4. Any modifications to `h5p-styles.scss` will automatically compile to `h5p-styles.css`
+
+See [Using your own colours](#using-your-own-colours) and [Theme expansion](#theme-expansion) for theming guidance.
+
 ---
 ## Deployment to H5P.com
 **Requirement:** Administrator access to H5P is needed to upload custom styles. 
@@ -96,55 +99,36 @@ There are minor instances where the properties `filter` and `gradient` utilise h
 - The theme standardises the look of buttons and other elements, therefore inconsistently applied box-shadows, transitions, etc. across content types have been removed.
 - See [**FAQs**](#faqs) for more information on styling particulars.
 ---
-## Suggested workflow for developing your own theme
+## Theme expansion
 **Requirement:** Administrator access to H5P is needed to upload and preview custom styles. 
 
 ### Preparation
-Create a suite of content types to use for testing. Ensure all types, where applicable, include:
+Create instances of any content types that you wish to theme. Ensure all types, where applicable, include:
+- Hyperlinks, images, and/or video URLs
 - Tip text / Hover text / Feedback text
 - Show scores
 - Enable Retry
 - All possible nested content types (e.g. Course Presentation, Interactive Book, etc.)
-- Hyperlinks, images, and/or video URLs
 
-### Out of the box
-1. Following the [Installation and usage](#installation-and-usage) steps.
-3. Replace the existing colour variable values with your own (search the sheet for `filter` and `gradient` to locate hardcoded instances that require updating)
-4. **Save**
+### Guidelines
+All styling for individual content types must be included inside `.h5p-content`. Some global UI elements (buttons, progress bars, etc.) exist outside `.h5p-content` and should be defined first.
 
-### Theme expansion
-All styling for individual content types must be included inside `.h5p-content`. Some global UI elements (buttons, progress bars, etc.) exist ouside `.h5p-content` and should be defined first.
+Most H5P content types include a useful parent class name (`.h5p-branching-scenario`, `.h5p-multichoice`). In the absence of one, it may be a global class (`.h5p-core-button`, `.joubel-simple-rounded-button`).
 
-Most H5P content types include a useful parent classname (`.h5p-branching-scenario`, `.h5p-multichoice`). In the absence of one, it may be a global class (`.h5p-core-button`, `.joubel-simple-rounded-button`).
+### Styling elements
 
-**Have your unstyled H5P content item ready to preview**
-1. In a browser, login to H5P as an Administrator
-2. Go to **Manage Content**
-3. Select a test H5P content type that has *not* been included in the theming list above. It will open in **View** mode.
- 
-**Add your theme colours**
+1. Open the content type in your browser and inspect the element you wish to theme
+2. Copy/paste selectors and properties suitable for override into **h5p-styles.scss**
+3. *Optional: Only for the brave and to cover all bases* Open the relevant H5P stylesheet(s) from the inspector, then search for the current selector to locate additional usage and styling that may require override
+4. Consider using one of the existing Sass variables as the new property value
 
-4. Open the **h5p-theming** folder in a code editor
-5. Run `npm install`
-6. Run `npm start` (any saved changes to h5p-styles.scss will now automatically compile to h5p-styles.css)
-6. Open **h5p-styles.scss**
-7. Replace the existing colour variable values with your own (search the sheet for `filter` and `gradient` to locate hardcoded instances that require updating). If modifying variable names, perform a find and replace on the file to update all instances.
-8. **Save**
-
-**Inspect content type to determine elements for theming**
-
-8. Return to the browser and inspect the test H5P content type you wish to theme
-9. Copy/paste selectors and properties suitable for override into **h5p-styles.scss**
-10. *Optional:* Only for the brave and to cover all bases. Open the relevant H5P stylesheet(s) from the inspector, then search for the current selector to locate additional usage and styling that may require override
-11. In **h5p-styles.scss** replace the pasted H5P colour/s with your theme colour variable/s
-12. **Save**
 ---
 ## FAQs
 | Question | Answer |
 | ----------- | ----------- |
 | Can I change the fonts used? | Adjusting the font-family across H5P is not advised unless content types are rigorously tested across browsers and devices. There are *many* typefaces and font icons in use across H5P with no standard unit of measurement (px, em, %), and some elements change in position and size following interaction or at media queries. |
-| Can I add assets? | It is not possible to add additional assets during theming (i.e. background images, fonts, scripts etc.) as custom theming via H5P is limited to CSS with no access to asset directories.  |
+| Can I add assets? | While it is possible to add addtional theme assets (i.e. background images, fonts, scripts etc.), these assets cannot be hosted on H5P.com, you would need to use another hosting provider. |
 | Can I change existing assets? | It is possible in some instances to target the `:before` or `content` properties to make adjustments if you can ascertain the font icon libraries used, however it is not advised. Minor blue-based icons and images that could not be overriden remain. |
-| Why are hyperlinks blue? | Text hyperlinks have intentionally been left unstyled and will assume the brower defaults. This is due to the multitude of background colours in use across H5P and the ability of Authors to set unique background colours to some elements as they create content. If adjusting link colours, rigorous testing is required for all content types to ensure sufficient contrast is present for accessibility. |
+| Why are hyperlinks blue? | Text hyperlinks have intentionally been left unstyled and will assume the browser defaults. This is due to the multitude of background colours in use across H5P and the ability of Authors to set unique background colours to some elements as they create content. If adjusting link colours, rigorous testing is required for all content types to ensure sufficient contrast is present for accessibility. |
 | Why can't I just do a find and replace on the H5P stylesheet and use that as my theme? | There are multiple stylesheets in use by H5P, over 30 shades of blue applied across the H5P items covered by this theme, and a blanket approach would also affect the H5P UI dashboards. This theme is designed to only target the bare essentials. |
-| My styles aren't working or have stopped working | 1. Check your Sass syntax<br/>2. Try placing your block outside `.h5p-content {}`<br/>3. Ensure changes are Saved<br/>4. Hard-refresh your browser to view changes<br/>5. The content type may have been by H5P and requires restyling |
+| My styles aren't working or have stopped working | 1. Check your Sass syntax<br/>2. Try placing your block outside `.h5p-content {}`<br/>3. Ensure changes are Saved<br/>4. Hard-refresh your browser to view changes<br/>5. The content type may have been updated by H5P and requires restyling |
