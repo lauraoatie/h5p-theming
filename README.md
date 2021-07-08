@@ -59,7 +59,7 @@
 - Node.js
 - Sass compiler
 ---
-## Installation
+## Installation and Usage
 1. Download (or clone) the repository by running:  
 ```$ git clone https://github.com/lauraoatie/h5p-theming.git```
 2. After downloading, go to the project directory and run:  
@@ -67,6 +67,16 @@
 3. Start watching for changes to `h5p-styles.scss` by running:  
 ```$ npm start```
 4. Any modifications to `h5p-styles.scss` will automatically compile to `h5p-styles.css`
+---
+## Deployment to H5P.com
+**Requirement:** Administrator access to H5P is needed to upload custom styles. 
+1. Once you have modified the theme, copy the contents of **h5p-styles.css**
+2. Login to H5P.com, go to **Manage Organisation** > **Settings** > **Custom CSS**
+3. Paste the contents of **h5p-styles.css** into the **Preview (Working css)** field
+4. Click **Save settings**
+5. Open each of the content types from the table above to view and test the changes
+6. When you are ready to deploy changes to all users, click **Copy working.css to organization.css** to enable it organisation wide
+
 ---
 ## How does it work?
 The Sass colour variables in the table below have been applied to some global H5P components and individual elements across content types. The theming is simple and merely replaces the H5P blue with a different primary colour. 
@@ -147,16 +157,6 @@ Most H5P content types include a useful parent classname (`.h5p-branching-scenar
 10. *Optional:* Only for the brave and to cover all bases. Open the relevant H5P stylesheet(s) from the inspector, then search for the current selector to locate additional usage and styling that may require override
 11. In **h5p-styles.scss** replace the pasted H5P colour/s with your theme colour variable/s
 12. **Save**
----
-## Adding the theme to H5P
-1. Once you have modified the theme, copy the contents of **h5p-styles.css**
-2. Login to your **staging** instance of H5P, go to **Manage Organisation** > **Settings** > **Custom CSS**
-3. Paste the contents of **h5p-styles.css** into the **Preview** textarea
-4. **Save settings**
-17. To preview changes, refresh the browser window containing your test H5P content type
-6. Thoroughly test all interactivity in the content type
-7. When theming and testing are complete, click **Copy working.css to organization.css** to enable it organisation wide for others to view
-8. Follow these steps when deploying to Production
 ---
 ## FAQs
 | Question | Answer |
