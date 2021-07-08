@@ -61,25 +61,31 @@
 ---
 ## Installation and Usage
 1. Download (or clone) the repository by running:  
-```$ git clone https://github.com/lauraoatie/h5p-theming.git```
+```
+$ git clone https://github.com/lauraoatie/h5p-theming.git
+```
 2. After downloading, go to the project directory and run:  
-```$ npm install```
+```
+$ npm install
+```
 3. Start watching for changes to `h5p-styles.scss` by running:  
-```$ npm start```
+```
+$ npm start
+```
 4. Any modifications to `h5p-styles.scss` will automatically compile to `h5p-styles.css`
 ---
 ## Deployment to H5P.com
 **Requirement:** Administrator access to H5P is needed to upload custom styles. 
 1. Once you have modified the theme, copy the contents of **h5p-styles.css**
 2. Login to H5P.com, go to **Manage Organisation** > **Settings** > **Custom CSS**
-3. Paste the contents of **h5p-styles.css** into the **Preview (Working css)** field
+3. Paste the contents of **h5p-styles.css** into the **Preview (Working.css)** field
 4. Click **Save settings**
 5. Open each of the content types from the table above to view and test the changes
 6. When you are ready to deploy changes to all users, click **Copy working.css to organization.css** to enable it organisation wide
 
 ---
-## How does it work?
-The Sass colour variables in the table below have been applied to some global H5P components and individual elements across content types. The theming is simple and merely replaces the H5P blue with a different primary colour. 
+## Using your own colours
+The Sass colour variables in the table below have been applied to some global H5P components and individual content types. The theming is simple and merely replaces the H5P blue with a different primary colour. 
 
 To theme your H5P instance, specify new colours for the following:
 
@@ -103,31 +109,23 @@ There are minor instances where the properties `filter` and `gradient` utilise h
 
 #### Notes
 - Some H5P content items retain the `:active` psuedo-class and require clicking elsewhere to return to the `link` state. As a result, is recommended to select a suitable accessible `hover/active` colour that is similar to the link colour to avoid a jarring experience for users.
-- Text anchors have intentionally been left unstyled and will assume the brower defaults.
-- The theme standardises the look of buttons, therefore inconsistently applied box-shadows, transitions, etc. across content types have been removed.
-- See **FAQs** for more information on styling particulars.
+- Text anchors have intentionally been left unstyled and will assume the browser defaults.
+- The theme standardises the look of buttons and other elements, therefore inconsistently applied box-shadows, transitions, etc. across content types have been removed.
+- See [**FAQs**](#faqs) for more information on styling particulars.
 ---
-## Modification
+## Suggested workflow for developing your own theme
 **Requirement:** Administrator access to H5P is needed to upload and preview custom styles. 
 
-**Preparation:** Create a suite of content types to use for testing. Ensure all types, where applicable, include:
+### Preparation
+Create a suite of content types to use for testing. Ensure all types, where applicable, include:
 - Tip text / Hover text / Feedback text
 - Show scores
 - Enable Retry
 - All possible nested content types (e.g. Course Presentation, Interactive Book, etc.)
 - Hyperlinks, images, and/or video URLs
 
-***Note:** These steps should be performed on a **staging** instance of H5P prior to deployment to production.*
-1. Login to H5P as an Administrator
-2. Go to **Manage Content**
-3. Click **Add Content** 
-4. Create a new content type by selecting from the available content types or select **Upload**
-
 ### Out of the box
-1. Open the **h5p-theming** folder in a code editor (e.g. Visual Studio Code)
-2. Run `npm install`
-2. Run `npm start` (any saved changes to h5p-styles.scss will now automatically compile to h5p-styles.css)
-3. Open **h5p-styles.scss**
+1. Following the [Installation and usage](#installation-and-usage) steps.
 3. Replace the existing colour variable values with your own (search the sheet for `filter` and `gradient` to locate hardcoded instances that require updating)
 4. **Save**
 
