@@ -16,7 +16,7 @@
 
 **Tested with:** H5P.com (SaaS). *May* also work with self-hosted and H5P.org
 
-**Environmemt:** It is recommended to have a staging environment of H5P to preview and test all theming changes before applying changes organisation wide. Only Administrators can add custom CSS to H5P and view content types in Preview mode. Due to the frequency of theming tests, Administrator access is recommended.
+**Environment:** It is recommended to have a staging environment of H5P to preview and test all theming changes before applying changes organisation wide. Only **Administrators** can add custom CSS to H5P and view content types in Preview mode.
 
 **Content types included in theme:**<br/>
 *(**Note:** N/A = no styling necessary)*
@@ -34,6 +34,7 @@
 - Documentation Tool
 - Drag and Drop
 - Drag the Words
+- Emoji Cloud
 - ~~Fill in the Blanks - N/A~~
 - Flashcards
 - Guess the Answer
@@ -44,25 +45,28 @@
 - ~~KewAr Code - N/A~~
 - Mark the Words
 - Multiple Choice
+- Multipoll
 - Quiz (Question Set)
 - Single Choice Set
 - Summary
 - ~~Text - N/A~~
 - True/False
 - Virtual Tour
-- Emoji Cloud
 - Word Cloud
-- Multipoll
+
 ---
 ## Requirements
 - Node.js
-- Sass compiler/minifier
+- Sass compiler
 ---
 ## Installation
-1. Download and open the **h5p-theming** folder in a code editor (e.g. Visual Studio Code)
-2. Run `npm install`
-3. Run `npm start` (any saved changes to h5p-styles.scss will now automatically compile to h5p-styles.css)
-4. Push changes to ....
+1. Download (or clone) the repository by running:  
+```$ git clone https://github.com/lauraoatie/h5p-theming.git```
+2. After downloading, go to the project directory and run:  
+```$ npm install```
+3. Start watching for changes to `h5p-styles.scss` by running:  
+```$ npm start```
+4. Any modifications to `h5p-styles.scss` will automatically compile to `h5p-styles.css`
 ---
 ## How does it work?
 The Sass colour variables in the table below have been applied to some global H5P components and individual elements across content types. The theming is simple and merely replaces the H5P blue with a different primary colour. 
