@@ -3,20 +3,20 @@
   * [Overview](#overview)
   * [Requirements](#requirements)
   * [Installation](#installation)
-  * [How does it work?](#how-does-it-work)
+  * [How does it work?](#how-does-it-work-)
       - [Notes](#notes)
   * [Modification](#modification)
     + [Out of the box](#out-of-the-box)
     + [Theme expansion](#theme-expansion)
   * [Adding the theme to H5P](#adding-the-theme-to-h5p)
   * [FAQs](#faqs)
-
+ 
 ## Overview
 **Description:** This is a custom theme to override the default blue H5P theme. This theme will apply font, border and background colours to select content types. It will not alter the UI of the H5P editor dashboard.
 
-**Designed for:** Blackboard H5P LTI 
+**Tested with:** H5P.com (SaaS). *May* also work with self-hosted and H5P.org
 
-**Environmemt:** It is recommended to have a staging environment of H5P to preview and test all theming changes before applying them organisation wide. Only Administrators can add custom CSS to H5P and view content types in Preview mode. Due to the frequency of theming tests, Administrator access is recommended.
+**Environmemt:** It is recommended to have a staging environment of H5P to preview and test all theming changes before applying changes organisation wide. Only Administrators can add custom CSS to H5P and view content types in Preview mode. Due to the frequency of theming tests, Administrator access is recommended.
 
 **Content types included in theme:**<br/>
 *(**Note:** N/A = no styling necessary)*
@@ -162,4 +162,4 @@ Most H5P content types include a useful parent classname (`.h5p-branching-scenar
 | Can I change existing assets? | It is possible in some instances to target the `:before` or `content` properties to make adjustments if you can ascertain the font icon libraries used, however it is not advised. Minor blue-based icons and images that could not be overriden remain. |
 | Why are hyperlinks blue? | Text hyperlinks have intentionally been left unstyled and will assume the brower defaults. This is due to the multitude of background colours in use across H5P and the ability of Authors to set unique background colours to some elements as they create content. If adjusting link colours, rigorous testing is required for all content types to ensure sufficient contrast is present for accessibility. |
 | Why can't I just do a find and replace on the H5P stylesheet and use that as my theme? | There are multiple stylesheets in use by H5P, over 30 shades of blue applied across the H5P items covered by this theme, and a blanket approach would also affect the H5P UI dashboards. This theme is designed to only target the bare essentials. |
-| My styles aren't working or have stopped working | 1. Check your SaSS syntax<br/>2. Try placing your block outside `.h5p-content {}`<br/>3. Ensure changes are Saved<br/>4. Hard-refresh your browser to view changes<br/>5. The content type may have been by H5P and requires restyling |
+| My styles aren't working or have stopped working | 1. Check your Sass syntax<br/>2. Try placing your block outside `.h5p-content {}`<br/>3. Ensure changes are Saved<br/>4. Hard-refresh your browser to view changes<br/>5. The content type may have been by H5P and requires restyling |
