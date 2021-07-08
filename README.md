@@ -2,13 +2,14 @@
 - [H5P Theming](#h5p-theming)
   * [Overview](#overview)
   * [Requirements](#requirements)
-  * [Installation](#installation)
-  * [How does it work?](#how-does-it-work-)
+  * [Installation and Usage](#installation-and-usage)
+  * [Deployment to H5P.com](#deployment-to-h5pcom)
+  * [Using your own colours](#using-your-own-colours)
       - [Notes](#notes)
-  * [Modification](#modification)
+  * [Suggested workflow for developing your own theme](#suggested-workflow-for-developing-your-own-theme)
+    + [Preparation](#preparation)
     + [Out of the box](#out-of-the-box)
     + [Theme expansion](#theme-expansion)
-  * [Adding the theme to H5P](#adding-the-theme-to-h5p)
   * [FAQs](#faqs)
  
 ## Overview
@@ -19,40 +20,22 @@
 **Environment:** It is recommended to have a staging environment of H5P to preview and test all theming changes before applying changes organisation wide. Only **Administrators** can add custom CSS to H5P and view content types in Preview mode.
 
 **Content types included in theme:**<br/>
-*(**Note:** N/A = no styling necessary)*
 
-- Accordion
-- Arithmetic Quiz
-- Audio Recorder
-- Branching Scenario
-- ~~Chart - N/A~~
-- ~~Collage - N/A~~
-- ~~Column - N/A~~
-- Course Presentation
-- Dialogue Cards
-- Dictation
-- Documentation Tool
-- Drag and Drop
-- Drag the Words
-- Emoji Cloud
-- ~~Fill in the Blanks - N/A~~
-- Flashcards
-- Guess the Answer
-- Image Hotspot
-- Image Slider
-- Interactive Book
-- Interactive Video
-- ~~KewAr Code - N/A~~
-- Mark the Words
-- Multiple Choice
-- Multipoll
-- Quiz (Question Set)
-- Single Choice Set
-- Summary
-- ~~Text - N/A~~
-- True/False
-- Virtual Tour
-- Word Cloud
+| Content types | | |
+| ----------- | ----------- | ----------- |
+| Accordion | Drag and Drop | Mark the Words |
+Arithmetic Quiz | Drag the Words | Multiple Choice |
+Audio Recorder | Emoji Cloud | Multipoll |
+Branching Scenario | ~~Fill in the Blanks - N/A~~ | Quiz (Question Set) |
+~~Chart - N/A~~ | Flashcards | Single Choice Set |
+~~Collage - N/A~~ | Guess the Answer | Summary |
+~~Column - N/A~~ | Image Hotspot | ~~Text - N/A~~ |
+Course Presentation | Image Slider | True/False |
+Dialogue Cards | Interactive Book | Virtual Tour |
+Dictation | Interactive Video | Word Cloud |
+Documentation Tool | ~~KewAr Code - N/A~~ |
+
+*(**Note:** N/A = no individual styling necessary or item uses global styles)*
 
 ---
 ## Requirements
