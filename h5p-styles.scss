@@ -1,65 +1,65 @@
 $black: #262223;
 $white: #FFFFFF;
-$crimson: #990033;
-$crimson-dar: #c50143;
-$crimson-dar2: #88002d;
-$fuchsia: #ec0264;
+$color-primary: #990033;
+$color-primary-medium: #ec0264;
+$color-primary-dark: #c50143;
+$color-primary-darker: #88002d;
 $white-grey: #FAFAFA;
-$grey-lig: #DEDEDE;
-$grey-lig2: #C5C5C5;
-$grey-lig3: #A2A2A2;
-$grey-med: #333333;
-$grey-med2: #3a3537;
-$correct: #9dd8bb;
-$correct-med: #47b47d;
-$correct-dar: #255c41;
-$incorrect: #f7d0d0;
-$incorrect-med: #dd2e2e;
-$incorrect-dar: #b71c1c;
-$teal: #45a29f;
-$teal-dar: #49837E;
-$orange-med: #b71c1c;
-$purple: #72518a;
+$color-grey-lightest: #DEDEDE;
+$color-grey-lighter: #C5C5C5;
+$color-grey-light: #A2A2A2;
+$color-grey-medium: #333333; //Text colour
+$color-grey-medium-dark: #3a3537;
+$color-correct: #9dd8bb;
+$color-correct-medium: #47b47d;
+$color-correct-dark: #255c41;
+$color-incorrect: #f7d0d0;
+$color-incorrect-medium: #dd2e2e;
+$color-incorrect-dark: #b71c1c;
+$color-game-1: #45a29f;
+$color-game-1-medium: #49837E;
+$color-game-2: #b71c1c;
+$color-game-3: #72518a;
 
 
 /* Core button */
 button.h5p-core-button { 
-  background: $crimson;
+  background: $color-primary;
   &:link, &:visited {
-    background: $crimson;
+    background: $color-primary;
   }
   &:hover {
-    background: $crimson-dar;
+    background: $color-primary-dark;
   }
   &:focus {
-    background: $crimson-dar2;
+    background: $color-primary-darker;
   }
   &:active {
-    background: $crimson-dar;
+    background: $color-primary-dark;
   }
 }
 /* Core cancel button */
 button.h5p-core-cancel-button { 
-color: $crimson;
+color: $color-primary;
   &:link, &:visited {
-    color: $crimson;
+    color: $color-primary;
   }
   &:focus {
-    color: $crimson-dar2;
+    color: $color-primary-darker;
   }
 }
 /* Joubel Simple Rounded button */
 /* Arrow button */
 .joubel-simple-rounded-button {
-  background-color: $crimson;
+  background-color: $color-primary;
   &:hover {
-    background-color: $crimson-dar;
+    background-color: $color-primary-dark;
   }
   &:focus {
-    background-color: $crimson-dar2;
+    background-color: $color-primary-darker;
   }
   &:active {
-    background-color: $crimson;
+    background-color: $color-primary;
     box-shadow: none;
   }
 }
@@ -71,14 +71,14 @@ button.h5p-confirmation-dialog-exit {
 }
 button.h5p-confirmation-dialog-exit {
   &:hover {
-    color: $grey-lig;
+    color: $color-grey-lightest;
   }
   &:focus {
-    color: $grey-lig2;
+    color: $color-grey-lighter;
   }
 }
 .h5p-confirmation-dialog-header {
-  color: $crimson;
+  color: $color-primary;
 }
 /* Tip container speech bubble icon */
 .joubel-icon-tip-normal,
@@ -86,81 +86,81 @@ button.h5p-confirmation-dialog-exit {
 .joubel-icon-comment-normal:hover,
 .joubel-icon-comment-normal:active {
   .h5p-icon-speech-bubble:before {
-    color: $crimson;
+    color: $color-primary;
   }
   &:hover {
-    color: $crimson;
+    color: $color-primary;
     .h5p-icon-speech-bubble:before {
-      color: $crimson-dar;
+      color: $color-primary-dark;
     }
   }
   &:active {
     .h5p-icon-speech-bubble:before {
-      color: $crimson-dar;
+      color: $color-primary-dark;
     }
   }
 }
 /* Button question mark tip that appears in Show Solution popup */
  .h5p-joubelui-score-bar {
   .joubel-tip-container {
-    color: $crimson;
+    color: $color-primary;
     &:hover, &:active {
-      color: $crimson-dar;
+      color: $color-primary-dark;
     }
     &:focus {
-      color: $crimson-dar2;
+      color: $color-primary-darker;
     }
   }
 }
 /* Numeric Score */
 .h5p-joubelui-score-numeric {
-  color: $grey-med;
+  color: $color-grey-medium;
 }
 /* Carousel - Progress dots */
 .progress-dot.current {
-  background: $crimson-dar;
+  background: $color-primary-dark;
 }
 .progress-dot.answered {
-  background: $crimson;
+  background: $color-primary;
 }
 /* Override all inputs, textarea */
 input, textarea {
-  border: 1px solid $grey-lig3 !important;
-  border-color: $grey-lig3 !important;
+  border: 1px solid $color-grey-light !important;
+  border-color: $color-grey-light !important;
   &:focus {
     outline: none !important;
-    border: 1px solid $grey-lig3 !important;
-    border-color: $grey-lig3 !important;
+    border: 1px solid $color-grey-light !important;
+    border-color: $color-grey-light !important;
     box-shadow: 0 0 0 0.15rem rgb(0 0 0 / 15%) !important;
   }
 }
 .h5p-content {
   /*  ---------------------- GLOBAL */
   /* Font */
-  color: $grey-med;
+  color: $color-grey-medium;
   /* Buttons */
   .h5peditor .ui-dialog .h5p-joubelui-button, 
   .h5peditor .h5p-joubelui-button, 
   .h5p-joubelui-button {
-    background: $crimson;
+    background: $color-primary;
   }
   .h5p-joubelui-button {
     &:hover {
-      background: $crimson-dar;
+      background: $color-primary-dark;
     }
     &:focus {
-      background: $crimson-dar2;
+      background: $color-primary-darker;
     }
     &:active {
-      background: $crimson-dar;
-      -webkit-box-shadow: inset 0 4px 0 $crimson-dar;
-      -moz-box-shadow: inset 0 4px 0 $crimson-dar;
-      box-shadow: inset 0 4px 0 $crimson-dar;
+      background: $color-primary-dark;
+      -webkit-box-shadow: inset 0 4px 0 $color-primary-dark;
+      -moz-box-shadow: inset 0 4px 0 $color-primary-dark;
+      box-shadow: inset 0 4px 0 $color-primary-dark;
     }
   }
   /* Feedback text under button */
   .h5p-question-feedback {
-    color: $crimson;
+    color: $color-primary;
   }
   /* Feedback text and results (Question set) */
   .questionset-results {
@@ -170,7 +170,7 @@ input, textarea {
   }
   /* Progress bar */
   .h5p-joubelui-progressbar {
-    background-color: $grey-lig3;
+    background-color: $color-grey-light;
   }
   .h5p-joubelui-progressbar-background {
     background-color: $black;
@@ -178,86 +178,81 @@ input, textarea {
   /* ---------------------- Item: Arithmetic Quiz */
   /* Intro screen background colour */ 
   .h5p-baq-intro-page {
-    background: $purple; 
+    background: $color-game-3; 
   }
   .h5p-baq-countdown-bg {
-    //background: $teal;
-    background: $crimson;
+    background: $color-primary;
   }
   /* Start button */
   .h5p-baq-countdown-text {
-    background: $orange-med;
-    //background: $crimson-dar2;
+    background: $color-game-2;
   }
   .h5p-baq * {
     text-shadow: none;
   }
   .h5p-baq {
-    background: $purple;
+    background: $color-game-3;
   }
   .h5p-baq-alternatives > .h5p-joubelui-button {
-    background: $teal;
+    background: $color-game-1;
   }
   .h5p-baq-alternatives > .h5p-joubelui-button:active, 
   .h5p-baq-alternatives > .h5p-joubelui-button:hover {
-    background: $orange-med;
-    //background: $crimson-dar;
+    background: $color-game-2;
   }
   /* Start and Retry button */
   .h5p-joubelui-button.mq-control-button {
-    //background: $teal;
-    background: $crimson-dar2;
+    background: $color-primary-darker;
     border-bottom: 0.2em solid rgba($black,0.5); 
     transition: none;
     &:hover, &:active {
-      //background: $teal-dar;
-      background: $crimson-dar;
+      background: $color-primary-dark;
       box-shadow: none;
     }
   }
   /* Correct answer */
   .h5p-baq-alternatives {
      .h5p-joubelui-button.reveal-correct {
-      background: $teal-dar;
+      background: $color-game-1-medium;
      }
   }
   /* Score */
   .h5p-baq-score-widget-number {
-    color: $purple;
+    color: $color-game-3;
   }
   /* ---------------------- Item: Accordion */
   .h5p-accordion {
     .h5p-panel-title {
-      color: $grey-med;
+      color: $color-grey-medium;
       &:hover {
-        color: $crimson;
+        color: $color-primary;
       }
       &:focus {
-        color: $crimson-dar2;
+        color: $color-primary-darker;
       }
       &:active {
-        color: $crimson;
+        color: $color-primary;
       }
     }
   }
   /* ---------------------- Item: Audio Recorder */
   /* Notification background */
   .h5p-audio-recorder-view [role="status"] {
-    background-color: rgba($grey-lig,0.5);
+    background-color: rgba($color-grey-lightest,0.5);
   }
   /* Timer */
   .h5p-audio-recorder-view {
     .title {
-      color: $grey-med;
+      color: $color-grey-medium;
     }
   }
   .audio-recorder-timer {
-    color: $grey-med;
+    color: $color-grey-medium;
   }
   /* ---------------------- Item: Branching Scenario */
   /* Screens */
   .h5p-branching-scenario .h5p-start-screen, .h5p-end-screen {
-    background: radial-gradient(at top,$grey-lig3,$grey-med2);
+    background: radial-gradient(at top,$color-grey-light,$color-grey-medium-dark);
   }
   /* Buttons */
   .h5p-branching-scenario .h5p-start-button, .h5p-end-button, .h5p-nav-button {
@@ -265,26 +260,26 @@ input, textarea {
     color: $white;
     &:hover {
       border-color: $white;
-      color: $crimson;
+      color: $color-primary;
       background: $white;
     }
   }
   /* Screen background colour */
   .h5p-branching-scenario {
     .h5p-current-screen {
-      background: $grey-med2;
+      background: $color-grey-medium-dark;
     }
     /* Popup Proceed button */
     .h5p-branching-question {
       button {
-        background-color: $crimson;
+        background-color: $color-primary;
         color: $white;
         border: none;
         &:hover, &:active {
-          background-color: $crimson-dar;
+          background-color: $color-primary-dark;
         }
         &:focus {
-          background-color: $crimson-dar2;
+          background-color: $color-primary-darker;
         }
       }
     }
@@ -313,98 +308,94 @@ input, textarea {
         }
       }
       .h5p-progressbar-part-show {
-        //background: $crimson;
         background: $black;
         &:hover, &:active {
-          //background: $crimson-dar;
-          background: $grey-med2;
+          background: $color-grey-medium-dark;
         }
         .h5p-progressbar-part-selected {
           &:hover, &:active {
-            //background: $crimson-dar;
-            background: $grey-med2;
+            background: $color-grey-medium-dark;
           }
         }
       }
     }
     .h5p-slide-button.h5p-current {
       a {
-        background-image: -webkit-linear-gradient(top, $fuchsia, $crimson-dar);
-        background-image: -moz-linear-gradient(top, $fuchsia, $crimson-dar);
-        background-image: linear-gradient(180deg, $fuchsia, $crimson-dar);
+        background-image: -webkit-linear-gradient(top, $color-primary-medium, $color-primary-dark);
+        background-image: -moz-linear-gradient(top, $color-primary-medium, $color-primary-dark);
+        background-image: linear-gradient(180deg, $color-primary-medium, $color-primary-dark);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ec0264",endColorstr="#c50143",GradientType=0);
       }
     }
     /* Button */
     .h5p-element-button {
-      background: $crimson;
+      background: $color-primary;
       &:hover {
-        background: $crimson-dar;
+        background: $color-primary-dark;
       }
     }
     /* Scrollbar */
     .h5p-element .h5p-element-outer .h5p-element-inner::-webkit-scrollbar-thumb, 
     .h5p-element .h5p-element-outer::-webkit-scrollbar-thumb, 
     .h5p-keywords-wrapper>[role=menu]::-webkit-scrollbar-thumb {
-      background: $crimson;
+      background: $color-primary;
       &:hover {
-        background: $crimson-dar;
+        background: $color-primary-dark;
       }
     }
     /* Sidebar menu links */
     .h5p-keywords-wrapper > [role="menu"] > [role="menuitem"]:hover {
       span {
-        color: $crimson;
+        color: $color-primary;
       }
     }
     .h5p-keywords-wrapper > [role="menu"] > [role="menuitem"]:focus {
-      outline: 2px solid $grey-lig;
-      background-color: rgba($crimson-dar, 0.2);
+      outline: 2px solid $color-grey-lightest;
+      background-color: rgba($color-primary-dark, 0.2);
     }
     /* Score meter */
     .h5p-summary-score-meter > span {
-      background-color: $crimson;
+      background-color: $color-primary;
     }
     /* Social media buttons */
     .h5p-summary-facebook-message, .h5p-summary-google-message, .h5p-summary-twitter-message {
       &:hover {
-        color: $crimson;
+        color: $color-primary;
       }
     }
     /* Footer arrow buttons */
     .h5p-footer {
       .h5p-footer-button {
         &:hover, &:active {
-          background: $grey-lig;
+          background: $color-grey-lightest;
         }
         &:focus {
-          background: $grey-lig2;
+          background: $color-grey-lighter;
         }
       }
     }
     /* Dark solution mode */
     .h5p-footer-solution-mode {
-      //background-color: $grey-med;
       .h5p-footer-button {
         &:hover, &:active {
-          background: rgba($grey-lig,0.3);
+          background: rgba($color-grey-lightest,0.3);
         }
         &:focus {
-          background: rgba($grey-lig2,0.3);
+          background: rgba($color-grey-lighter,0.3);
         }
       }
     }
     /* Navigation based images to nav to another slide */
     .h5p-press-to-go.h5p-visible { 
       &:hover {
-        background-color: rgba($crimson, 0.2);
+        background-color: rgba($color-primary, 0.2);
       }
       &:active {
-        background-color: rgba($crimson, 0.4);
+        background-color: rgba($color-primary, 0.4);
       }
       &:focus {
-        outline: 2px solid $crimson;
-        box-shadow: inset 0 0 0 2px $grey-lig2;
+        outline: 2px solid $color-primary;
+        box-shadow: inset 0 0 0 2px $color-grey-lighter;
       } 
     }
   }
@@ -418,10 +409,10 @@ input, textarea {
       background: -o-linear-gradient(top, rgba(236, 2, 100,1) 0%,rgba(153, 0, 51,1) 100%);
       background: -ms-linear-gradient(top, rgba(236, 2, 100,1) 0%,rgba(153, 0, 51,1) 100%);
       &:hover, &:active {
-        background: $crimson-dar;
+        background: $color-primary-dark;
       }
       &:focus {
-        background: $crimson-dar2;
+        background: $color-primary-darker;
       }
     }
   }
@@ -436,17 +427,17 @@ input, textarea {
       background: -o-linear-gradient(top, rgba(236, 2, 100,1) 0%,rgba(153, 0, 51,1) 100%);
       background: -ms-linear-gradient(top, rgba(236, 2, 100,1) 0%,rgba(153, 0, 51,1) 100%);
       &:hover, &:active {
-        background: $crimson-dar;
+        background: $color-primary-dark;
       }
       &:focus {
-        background: $crimson-dar2;
+        background: $color-primary-darker;
       }
     }
     .h5p-joubelui-button.h5p-dialogcards-answer-button {
-      color: $grey-med;
+      color: $color-grey-medium;
       &:hover, &:active {
         color: $white;
-        background-color: $crimson-dar;
+        background-color: $color-primary-dark;
       }
       &:focus {
         color: $white;
@@ -458,12 +449,12 @@ input, textarea {
   .h5p-documentation-tool-page {
     /* Page title */
     .page-title {
-      color: $grey-med;
+      color: $color-grey-medium;
     }
     .page-help-text {
-      color: $crimson;
+      color: $color-primary;
       &:hover, &:focus {
-        color: $crimson-dar;
+        color: $color-primary-dark;
       }
     }
   }
@@ -471,12 +462,12 @@ input, textarea {
   /* Button fullscreen */
   .h5p-dragquestion .h5p-my-fullscreen-button-enter, 
   .h5p-dragquestion .h5p-my-fullscreen-button-exit {
-    color: $grey-lig2;
+    color: $color-grey-lighter;
   }
   .h5p-dragquestion {
     .h5p-my-fullscreen-button-enter, .h5p-my-fullscreen-button-exit {
       &:hover, &:focus, &:active {
-        color: $grey-lig3;
+        color: $color-grey-light;
       }
     }
   }
@@ -484,24 +475,23 @@ input, textarea {
   .h5p-dragquestion {
     .h5p-draggable {
       background: $white-grey;
-      border: 0.1em solid $grey-lig3;
+      border: 0.1em solid $color-grey-light;
     }
     .h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover {
-      //border: 0.1em solid $grey-lig3;
-      border: 0.1em solid $grey-med;
+      border: 0.1em solid $color-grey-medium;
       background: $white-grey;
     }
     .h5p-draggable.h5p-dropped {
-      color: $grey-med;
-      border: 0.1em solid $grey-lig3;
+      color: $color-grey-medium;
+      border: 0.1em solid $color-grey-light;
       background: $white-grey;
     }
   }
   /* ---------------------- Item: Drag the Words */
   /* Drop area */
   .h5p-drag-text [aria-dropeffect] {
-    background-color: $grey-lig;
-    border: 1px solid $grey-lig3;
+    background-color: $color-grey-lightest;
+    border: 1px solid $color-grey-light;
   }
   .h5p-drag-text [aria-grabbed] {
     background-color: $white-grey;
@@ -512,8 +502,8 @@ input, textarea {
     [aria-grabbed].h5p-drag-dropped,
     [aria-grabbed].h5p-drag-dropped:not(.ui-state-disabled):hover, 
     [aria-grabbed]:not(.ui-state-disabled):hover {
-      border: 0.1em solid $grey-lig3;
-      color: $grey-med;
+      border: 0.1em solid $color-grey-light;
+      color: $color-grey-medium;
       background: $white-grey;
     }
   }
@@ -522,19 +512,16 @@ input, textarea {
 
   /* ---------------------- Item: Flashcards */
   .using-mouse .h5p-flashcards .h5p-button.h5p-check-button:active {
-    //background-color: $crimson-dar;
-    background-color: $grey-med2;
+    background-color: $color-grey-medium-dark;
   }
   .h5p-flashcards {
     &.h5p-standalone {
       /* Card background */
-      //background-color: $crimson-dar;
-      background-color: $grey-med2;
+      background-color: $color-grey-medium-dark;
     }
     /* Card overlay */
     .h5p-card > .h5p-flashcard-overlay {
-      //background-color: $crimson;
-      background-color: $grey-med2;
+      background-color: $color-grey-medium-dark;
     }
     .h5p-description {
       border-bottom: 1px solid $white;
@@ -547,12 +534,12 @@ input, textarea {
     /* Button */
     .h5p-answer {
       .h5p-button {
-        background: $crimson;
+        background: $color-primary;
         &:hover, &:active {
-          background: $crimson-dar;
+          background: $color-primary-dark;
         }
         &:focus {
-          background: $crimson-dar2;
+          background: $color-primary-darker;
         }
       }
     }
@@ -565,12 +552,12 @@ input, textarea {
       .h5p-button {
         color: $white;
         border: 1px solid $white;
-        background-color: $crimson;
+        background-color: $color-primary;
         &:hover, &:active {
-          background-color: $crimson-dar;
+          background-color: $color-primary-dark;
         }
         &:focus {
-          box-shadow: 0 0 0.5em 0 $grey-lig;
+          box-shadow: 0 0 0.5em 0 $color-grey-lightest;
         }
       }
     } 
@@ -578,29 +565,29 @@ input, textarea {
   /* ---------------------- Item: Guess the Answer */
   .h5p-guess-answer {
     .show-solution-button {
-      background-color: $crimson;
+      background-color: $color-primary;
       &:hover, &:focus {
-        background: $crimson-dar;
+        background: $color-primary-dark;
       }
       &:active {
-        background: $crimson;
+        background: $color-primary;
         box-shadow: none;
       }
     }
     .solution-text {
-      color: $crimson;
+      color: $color-primary;
     }
   }
    /* ---------------------- Item: Image Hotspots */
    .h5p-image-hotspot-close-popup-button {
-      background-color: $grey-lig;
+      background-color: $color-grey-lightest;
       box-shadow: none;
       &:hover, &:active {
-        background-color: $grey-lig2;
+        background-color: $color-grey-lighter;
         box-shadow: none;
       }
       &:focus {
-        background-color: $grey-lig3;
+        background-color: $color-grey-light;
       }
    }
    /* ---------------------- Item: Image Slider */
@@ -609,229 +596,229 @@ input, textarea {
     background: none;
     height: 1em;
     width: 1em;
-    background-color: $grey-lig2;
+    background-color: $color-grey-lighter;
     border-radius: 50%;
     display: inline-block;
     &:hover, &:active {
-      background-color: $grey-lig3;
+      background-color: $color-grey-light;
     }
   }
   .h5p-image-slider-current-progress-element {
     background: none;
     height: 1em;
     width: 1em;
-    background-color: $crimson;
+    background-color: $color-primary;
     border-radius: 50%;
     display: inline-block;
   }
   /* ---------------------- Item: Interactive Book */
   .h5p-interactive-book-cover-bar {
-    background-color: rgba($grey-lig,0.5);
+    background-color: rgba($color-grey-lightest,0.5);
   }
   /*Progress bar line */
   .h5p-interactive-book-status-progressbar-front {
-    background-color: $crimson;
+    background-color: $color-primary;
   }
   .h5p-interactive-book-status-progressbar-back {
-    background-color: $grey-lig;
+    background-color: $color-grey-lightest;
   }
   .h5p-interactive-book-cover-readbutton {
     button {
-      background-color: $crimson;
+      background-color: $color-primary;
       &:hover, &:active {
-        background-color: $crimson-dar;
+        background-color: $color-primary-dark;
       }
       &:focus {
-        background-color: $crimson-dar2;
+        background-color: $color-primary-darker;
       }
     }
   }
   /* Menu button */
   .h5p-interactive-book-status-menu.h5p-interactive-book-status-menu-active {
-    background-color: $crimson;
+    background-color: $color-primary;
     &:hover, &:active {
-      background-color: $crimson-dar;
+      background-color: $color-primary-dark;
     }
     &:focus {
-      background-color: $crimson-dar2;
+      background-color: $color-primary-darker;
     }
   }
   /* Menu Title */
   .h5p-interactive-book-navigation-maintitle {
-    background-color: $crimson;
+    background-color: $color-primary;
   }
   /* Menu chapter headings */
   .h5p-interactive-book-navigation-chapter-button.h5p-interactive-book-navigation-current {
-    background-color: rgba($grey-lig, 0.5);
+    background-color: rgba($color-grey-lightest, 0.5);
   }
   .h5p-interactive-book-navigation-chapter-button {
-    background-color: rgba($grey-lig, 0.5);
+    background-color: rgba($color-grey-lightest, 0.5);
     &:hover {
-      background-color: rgba($grey-lig, 0.5);
+      background-color: rgba($color-grey-lightest, 0.5);
     }
     .h5p-interactive-book-navigation-chapter-title-text {
-      color: $crimson;
+      color: $color-primary;
     }
   }
   /* Menu chapter links */
   .h5p-interactive-book-navigation-sectionlist :hover {
-      color: $crimson;
+      color: $color-primary;
   }
   .h5p-interactive-book-navigation-section-title {
     &:focus {
-      color: $crimson-dar2;
+      color: $color-primary-darker;
     }
   }
   /* Progress number */
   .h5p-interactive-book-status-progress-number {
-    color: $grey-med;
+    color: $color-grey-medium;
   }
   /* Button base for all buttons */
   .h5p-interactive-book-status-button {
     &:hover, &:active {
-      background-color: $grey-lig2;
+      background-color: $color-grey-lighter;
     }
     &:focus {
-      background-color: $grey-lig3;
+      background-color: $color-grey-light;
     }
   }
   /* Button: Menu */
   .h5p-interactive-book-status-menu {
     .icon-menu {
-      color: $crimson;
+      color: $color-primary;
     }
   }
   /* Button: Back and Next arrows */
   .h5p-interactive-book-status-arrow, .h5p-interactive-book-status-fullscreen {
-    background-color: $grey-lig;
+    background-color: $color-grey-lightest;
   }
   .h5p-interactive-book-status-arrow {
     .navigation-button {
-      color: $grey-med;
+      color: $color-grey-medium;
     }
   }
   .h5p-interactive-book-status-button[disabled] {
-    background-color: rgba($grey-lig,0.5);
+    background-color: rgba($color-grey-lightest,0.5);
   }
   .h5p-interactive-book-status-button[disabled]:hover {
-    background-color: rgba($grey-lig,0.5);
+    background-color: rgba($color-grey-lightest,0.5);
   }
   /* Fullscreen button */
   .h5p-interactive-book-status-fullscreen.h5p-interactive-book-enter-fullscreen::before {
-    color: $grey-med;
+    color: $color-grey-medium;
   }
   .h5p-interactive-book-status-fullscreen.h5p-interactive-book-exit-fullscreen::before {
-    color: $grey-med;
+    color: $color-grey-medium;
   }
   /* Summary Page */
   /* Stats */
   .h5p-interactive-book-summary-page {
     .h5p-interactive-box-summary-progress {
-      color: $crimson;
+      color: $color-primary;
       .h5p-interactive-book-summary-progressbox-bigtext {
-        color: $crimson;
+        color: $color-primary;
       }
     }
     .h5p-interactive-book-summary-progress-circle {
-      fill: $crimson;
+      fill: $color-primary;
       box-shadow: 0 0 0 4px rgba($black, 10%);
     }
     /* Listed items */
     .h5p-interactive-book-summary-section-icon {
-      color: $crimson;
+      color: $color-primary;
     }
   }
   /* Heading area */
   .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section h4:hover, 
   .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-list-empty h4:hover {
-    color: $crimson;
+    color: $color-primary;
   }
   .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section h4 span[class^='icon-'], 
   .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-list-empty h4 span[class^='icon-'], 
   .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-section h4 span[class*=' icon-'], 
   .h5p-interactive-book-summary-page .h5p-interactive-book-summary-overview-list-empty h4 span[class*=' icon-'] {
-    color: $crimson;
+    color: $color-primary;
   }
   /* ---------------------- Item: Interactive Video */
  /* Summary timings per question */
   .h5p-interactive-video-endscreen-overview-table-row-time {
-    color: $grey-lig;
+    color: $color-grey-lightest;
   }
   /* ---------------------- Item: Kewar Code */
   /* N/A Uses the global link style */
   /* ---------------------- Item: Mark the Words */
   .h5p-mark-the-words [aria-selected="true"] {
-    background: $grey-lig;
+    background: $color-grey-lightest;
   }
   .h5p-mark-the-words .h5p-word-selectable-words:not(.h5p-disable-hover) [role="option"]:hover {
-    box-shadow:inset 0px 0px 0px 2px $grey-lig2;
+    box-shadow:inset 0px 0px 0px 2px $color-grey-lighter;
   }
   /* ---------------------- Item: Memory Game */
   .h5p-memory-reset {
-    background: $crimson;
+    background: $color-primary;
     box-shadow: none;
     transition: none;
     &:hover, &:active {
       margin-top: 0;
-      background: $crimson-dar;
+      background: $color-primary-dark;
       box-shadow: none;
       transition: none;
     }
     &:focus {
       margin-top: 0;
-      background: $crimson-dar2;
-      outline: 2px solid $grey-lig;
+      background: $color-primary-darker;
+      outline: 2px solid $color-grey-lightest;
     }
   }
   /* ---------------------- Item: Multiple Choice */
   /* Answer option */
   .h5p-multichoice {
     .h5p-alternative-container {
-      background: $grey-lig;
+      background: $color-grey-lightest;
       box-shadow: none;
       &:hover, &:active {
-        background: $grey-lig2;
+        background: $color-grey-lighter;
       }
       &:focus {
-        background: $grey-lig3;
+        background: $color-grey-light;
       }
     }
   }
   /* Selected option */
   .h5p-answer[aria-checked="true"] {
     .h5p-alternative-container {
-      color: $grey-med;
-      background: $grey-lig2;
+      color: $color-grey-medium;
+      background: $color-grey-lighter;
       box-shadow: none;
     }
   }
   /* Answer option hover */
   .h5p-answer:not([aria-disabled="true"]):hover .h5p-alternative-container {
-    background-color: $grey-lig2;
+    background-color: $color-grey-lighter;
   }
   /* Selected option on hover */
   .h5p-answer[aria-checked="true"]:not(.h5p-wrong):not(.h5p-correct):not([aria-disabled="true"]):hover {
     .h5p-alternative-container {
-      background: $grey-lig2;
+      background: $color-grey-lighter;
       box-shadow: none;
     }
   }
   /* Correct answer */    
   .h5p-answer.h5p-correct, .h5p-answer.h5p-correct:hover {
     .h5p-alternative-container {
-      background-color: $correct;
-      color: $grey-med;
+      background-color: $color-correct;
+      color: $color-grey-medium;
       box-shadow: none;
-      border-color: $correct;
+      border-color: $color-correct;
     }
   }
   /* Incorrect answer */
   .h5p-answer.h5p-wrong, .h5p-answer.h5p-wrong:hover {
     .h5p-alternative-container {
-      background-color: $incorrect;
-      color: $grey-med;
+      background-color: $color-incorrect;
+      color: $color-grey-medium;
       box-shadow: none;
-      border-color: $incorrect;
+      border-color: $color-incorrect;
     }
   }
   /* ---------------------- Item: Quiz Question Set */
@@ -839,22 +826,22 @@ input, textarea {
   /* ---------------------- Item: Single Choice Set */
   ul.h5p-sc-alternatives {
     .h5p-sc-selected {
-      background-color: $crimson;
+      background-color: $color-primary;
     }
      /* Answer option */
     li.h5p-sc-alternative {
-      background: $grey-lig;
+      background: $color-grey-lightest;
       box-shadow: none;
       &:hover, &:active {
-        background: $grey-lig2;
+        background: $color-grey-lighter;
       }
       &:focus {
-        background: $grey-lig3;
+        background: $color-grey-light;
       }
     }
     li.h5p-sc-alternative {
       .h5p-sc-progressbar {
-        background: $grey-lig;
+        background: $color-grey-lightest;
       }
     }
   }
@@ -863,12 +850,12 @@ input, textarea {
     .h5p-sc-solution-view {
       .h5p-sc-close-solution-view {
         color: $white;
-        background-color: $crimson;
+        background-color: $color-primary;
         &:hover, &:active {
-          background-color: $crimson-dar;
+          background-color: $color-primary-dark;
         }
         &:focus {
-          background-color: $crimson-dar2;
+          background-color: $color-primary-darker;
         }
       }
     }
@@ -876,48 +863,48 @@ input, textarea {
   /* ---------------------- Item: Summary */
   /* Selected */
   .h5p-summary .summary-container li, .h5p-summary .summary-options li {
-    background-color: $grey-lig;
+    background-color: $color-grey-lightest;
     box-shadow: none;
     margin-bottom: 0.5em;
   }
   .h5p-summary .h5p-panel:not(.panel-disabled) .summary-claim-unclicked:hover {
-    background: $grey-lig2;
+    background: $color-grey-lighter;
   }
   .h5p-summary .h5p-panel:not(.panel-disabled) .summary-claim-unclicked:focus {
-    background: $grey-lig3;
+    background: $color-grey-light;
   }
   /* ---------------------- Item: Text */
   //N/A
   /* ---------------------- Item: True,False */
   .h5p-true-false-answer {
-    border: 2px solid $grey-lig3;
+    border: 2px solid $color-grey-light;
     box-shadow: none;
-    color: $grey-med;
+    color: $color-grey-medium;
     &:hover, &:active {
-      background-color: $grey-lig;
-      border-color: $grey-lig3;
+      background-color: $color-grey-lightest;
+      border-color: $color-grey-light;
       transform: none;
     }
     &:focus {
-      background-color: $crimson-dar2;
+      background-color: $color-primary-darker;
       color: $white;
       box-shadow: none;
-      border: 2px solid $crimson-dar2;
+      border: 2px solid $color-primary-darker;
     }
     /* Selected answer */
     &[aria-checked=true] {
-      background: $grey-lig2;
-      color: $grey-med;
-      border-color: $grey-lig2; 
+      background: $color-grey-lighter;
+      color: $color-grey-medium;
+      border-color: $color-grey-lighter; 
     }
   }
   .h5p-true-false-answer.correct {
     background: $white;
-    border-color: $correct-med;
+    border-color: $color-correct-medium;
   }
   .h5p-true-false-answer.wrong {
     background: $white;
-    border-color: $incorrect-med;
+    border-color: $color-incorrect-medium;
   }
   /* ---------------------- Item: Virtual Tour 360 */
   .h5p-three-sixty-wrapper {
@@ -925,19 +912,19 @@ input, textarea {
     .nav-button {
       border: 1px solid $white;
       &:hover, &:active {
-        background: $crimson;
+        background: $color-primary;
       }
       &:focus {
-        background: $crimson-dar;
+        background: $color-primary-dark;
       }
     }
     /* Primary interaction buttons */
     .h5p-interaction-button {
       .nav-button {
-        background: $crimson;
+        background: $color-primary;
         border: 1px solid $white;
         &:hover, &:focus, &:active {
-          background: $crimson-dar;
+          background: $color-primary-dark;
         }
       }
     }
@@ -945,15 +932,15 @@ input, textarea {
   /* Popup */
   .h5p-text-dialog {
     .close-button-wrapper {
-      background-color: $grey-lig2;
+      background-color: $color-grey-lighter;
       border: none;
       transition: none;
       &:hover, &:active {
-        background-color: $grey-lig3;
-        box-shadow: 0 0.1em 0 rgba($grey-med, 0.3);
+        background-color: $color-grey-light;
+        box-shadow: 0 0.1em 0 rgba($color-grey-medium, 0.3);
       }
       &:focus {
-        background-color: $grey-lig3;
+        background-color: $color-grey-light;
       }
     }
   }
@@ -962,10 +949,10 @@ input, textarea {
     background-color: $black;
     border: 1px solid $white;
     &:hover, &:active {
-      background-color: $crimson;
+      background-color: $color-primary;
     }
     &:focus {
-      background-color: $crimson-dar2;
+      background-color: $color-primary-darker;
     }
   }
   /* Hub - Reset camera button */
@@ -974,10 +961,10 @@ input, textarea {
       background: $black;
       border: 1px solid $white;
       &:hover, &:active {
-        background-color: $crimson;
+        background-color: $color-primary;
       }
       &:focus {
-        background-color: $crimson-dar2;
+        background-color: $color-primary-darker;
       }
     }
   }
@@ -985,9 +972,9 @@ input, textarea {
   .multiplayer-preview-switcher {
     .right-side {
       .preview-link {
-        background-color: $crimson-dar;
+        background-color: $color-primary-dark;
         &:hover {
-          background-color: $crimson;
+          background-color: $color-primary;
         }
       }
     }

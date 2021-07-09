@@ -71,27 +71,27 @@ See [Using your own colours](#using-your-own-colours) and [Theme expansion](#the
 
 ---
 ## Using your own colours
-The Sass colour variables in the table below have been applied to some global H5P components and individual content types. The theming is simple and merely replaces the H5P blue with a different primary colour. 
+The Sass colour variables in the table below have been applied to some global H5P components and individual content types. The theming is simple and merely replaces the H5P blue with a different color-primary colour. 
 
 To theme your H5P instance, specify new colours for the following:
 
-`$primary`<br/>
-`$primary-dar`<br/>
-`$primary-dar2`<br/>
-`$primary-med`
+`$color-color-primary`<br/>
+`$color-primary-medium`<br/>
+`$color-primary-dark`<br/>
+`$color-primary-darker`
 
-There are minor instances where the properties `filter` and `gradient` utilise hardcoded colour values.
+There is a minor instance where the property `filter` utilise hardcoded colour value.
 
 | Variables | Usage |
 | ----------- | ----------- |
-| Primary colours |  |
-|`$black: #262223;`<br/>`$white: #FFFFFF;`<br/>`$primary: #990033;`<br/>`$primary-dar: #c50143;`<br/>`$primary-dar2: #88002d;`<br/>`$primary-med: #ec0264;` | <br/><br/>Background colour for buttons and elements.<br/>:hover/:active background or font colour.<br/>:focus  background or font colour.<br/>Gradient background colour. |
+| color-primary colours |  |
+|`$black: #262223;`<br/>`$white: #FFFFFF;`<br/>`$color-primary: #990033;`<br/>`$color-primary-dark: #c50143;`<br/>`$color-primary-darker: #88002d;`<br/>`$color-primary-medium: #ec0264;` | <br/><br/>Background colour for buttons and elements.<br/>:hover/:active background or font colour.<br/>:focus  background or font colour.<br/>Gradient background colour. |
 | Secondary colours | UI elements |
-|`$white-grey: #FAFAFA;`<br/>`$grey-lig: #DEDEDE;`<br/>`$grey-lig2: #C5C5C5;`<br/>`$grey-lig3: #A2A2A2;`<br/>`$grey-med: #333333;`<br/>`$grey-med2: #3a3537;` | |
+|`$white-grey: #FAFAFA;`<br/>`$color-grey-lightest: #DEDEDE;`<br/>`$color-grey-lighter: #C5C5C5;`<br/>`$color-grey-light: #A2A2A2;`<br/>`$color-grey-medium: #333333;`<br/>`$color-grey-medium-dark: #3a3537;` | |
 | Correct/Incorrect colours | (not applied to every instance) |
-| `$correct: #9dd8bb;`<br/>`$correct-med: #47b47d;`<br/>`$correct-dar: #255c41;`<br/>`$incorrect: #f7d0d0;`<br/>`$incorrect-med: #dd2e2e;`<br/>`$incorrect-dar: #b71c1c;`| |
+| `$color-correct: #9dd8bb;`<br/>`$color-correct-medium: #47b47d;`<br/>`$color-correct-dark: #255c41;`<br/>`$color-incorrect: #f7d0d0;`<br/>`$color-incorrect-medium: #dd2e2e;`<br/>`$color-incorrect-dark: #b71c1c;`| |
 | Gamification colours | Arithmetic Quiz|
-|`$teal: #45a29f;`<br/>`$teal-dar: #49837E;`<br/>`$orange-med: #b71c1c;`<br/>`$purple: #72518a;`||
+|`color-game-1: #45a29f;`<br/>`$color-game-1-medium: #49837E;`<br/>`$color-game-2: #b71c1c;`<br/>`$color-game-3: #72518a;`||
 
 #### Notes
 - Some H5P content items retain the `:active` psuedo-class and require clicking elsewhere to return to the `link` state. As a result, is recommended to select a suitable accessible `hover/active` colour that is similar to the link colour to avoid a jarring experience for users.
