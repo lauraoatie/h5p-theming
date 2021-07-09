@@ -2,7 +2,7 @@
 - [H5P Theming](#h5p-theming)
   * [Overview](#overview)
   * [Requirements](#requirements)
-  * [Installation and Usage](#installation-and-usage)
+  * [Installation and usage](#installation-and-usage)
   * [Deployment to H5P.com](#deployment-to-h5pcom)
   * [Using your own colours](#using-your-own-colours)
       - [Notes](#notes)
@@ -42,7 +42,7 @@ Documentation Tool | ~~KewAr Code - N/A~~ |
 - Node.js
 - Sass compiler
 ---
-## Installation and Usage
+## Installation and usage
 1. Download (or clone) the repository by running:  
 ```
 $ git clone https://github.com/lauraoatie/h5p-theming.git
@@ -62,9 +62,9 @@ See [Using your own colours](#using-your-own-colours) and [Theme expansion](#the
 ---
 ## Deployment to H5P.com
 **Requirement:** Administrator access to H5P is needed to upload custom styles. 
-1. Once you have modified the theme, copy the contents of **h5p-styles.css**
+1. Once you have modified the theme, copy the contents of `h5p-styles.css`
 2. Login to H5P.com, go to **Manage Organisation** > **Settings** > **Custom CSS**
-3. Paste the contents of **h5p-styles.css** into the **Preview (Working.css)** field
+3. Paste the contents of `h5p-styles.css` into the **Preview (Working.css)** field
 4. Click **Save settings**
 5. Open each of the content types from the table above to view and test the changes
 6. When you are ready to deploy changes to all users, click **Copy working.css to organization.css** to enable it organisation wide
@@ -75,12 +75,12 @@ The Sass colour variables in the table below have been applied to some global H5
 
 To theme your H5P instance, specify new colours for the following:
 
-`$color-color-primary`<br/>
+`$color--primary`<br/>
 `$color-primary-medium`<br/>
 `$color-primary-dark`<br/>
 `$color-primary-darker`
 
-There is a minor instance where the property `filter` utilise hardcoded colour value.
+There is a minor instance where the property `filter` utilises a hardcoded colour value.
 
 | Variables | Usage |
 | ----------- | ----------- |
@@ -118,8 +118,8 @@ Most H5P content types include a useful parent class name (`.h5p-branching-scena
 ### Styling elements
 
 1. Open the content type in your browser and inspect the element you wish to theme
-2. Copy/paste selectors and properties suitable for override into **h5p-styles.scss**
-3. *Optional: Only for the brave and to cover all bases* Open the relevant H5P stylesheet(s) from the inspector, then search for the current selector to locate additional usage and styling that may require override
+2. Copy/paste selectors and properties suitable for override into `h5p-styles.scss`
+3. *Optional: (Only for the brave and to cover all bases)* Open the relevant H5P stylesheet(s) from the inspector, then search for the current selector to locate additional usage and styling that may require override
 4. Consider using one of the existing Sass variables as the new property value
 
 ---
