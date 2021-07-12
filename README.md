@@ -75,7 +75,7 @@ The Sass colour variables in the table below have been applied to some global H5
 
 To theme your H5P instance, specify new colours for the following:
 
-`$color--primary`<br/>
+`$color-primary`<br/>
 `$color-primary-medium`<br/>
 `$color-primary-dark`<br/>
 `$color-primary-darker`
@@ -87,7 +87,7 @@ There is a minor instance where the property `filter` utilises a hardcoded colou
 | color-primary colours |  |
 |`$black: #262223;`<br/>`$white: #FFFFFF;`<br/>`$color-primary: #990033;`<br/>`$color-primary-dark: #c50143;`<br/>`$color-primary-darker: #88002d;`<br/>`$color-primary-medium: #ec0264;` | <br/><br/>Background colour for buttons and elements.<br/>:hover/:active background or font colour.<br/>:focus  background or font colour.<br/>Gradient background colour. |
 | Secondary colours | UI elements |
-|`$white-grey: #FAFAFA;`<br/>`$color-grey-lightest: #DEDEDE;`<br/>`$color-grey-lighter: #C5C5C5;`<br/>`$color-grey-light: #A2A2A2;`<br/>`$color-grey-medium: #333333;`<br/>`$color-grey-medium-dark: #3a3537;` | |
+|`color-off-white: #FAFAFA;`<br/>`$color-grey-lightest: #DEDEDE;`<br/>`$color-grey-lighter: #C5C5C5;`<br/>`$color-grey-light: #A2A2A2;`<br/>`$color-grey-medium: #333333;`<br/>`$color-grey-medium-dark: #3a3537;` | |
 | Correct/Incorrect colours | (not applied to every instance) |
 | `$color-correct: #9dd8bb;`<br/>`$color-correct-medium: #47b47d;`<br/>`$color-correct-dark: #255c41;`<br/>`$color-incorrect: #f7d0d0;`<br/>`$color-incorrect-medium: #dd2e2e;`<br/>`$color-incorrect-dark: #b71c1c;`| |
 | Gamification colours | Arithmetic Quiz|

@@ -4,7 +4,7 @@ $color-primary: #990033;
 $color-primary-medium: #ec0264;
 $color-primary-dark: #c50143;
 $color-primary-darker: #88002d;
-$white-grey: #FAFAFA;
+$color-off-white: #FAFAFA;
 $color-grey-lightest: #DEDEDE;
 $color-grey-lighter: #C5C5C5;
 $color-grey-light: #A2A2A2;
@@ -474,17 +474,17 @@ input, textarea {
   /* Drag objects */
   .h5p-dragquestion {
     .h5p-draggable {
-      background: $white-grey;
+      background: $color-off-white;
       border: 0.1em solid $color-grey-light;
     }
     .h5p-draggable:not(.ui-state-disabled).h5p-draggable-hover {
       border: 0.1em solid $color-grey-medium;
-      background: $white-grey;
+      background: $color-off-white;
     }
     .h5p-draggable.h5p-dropped {
       color: $color-grey-medium;
       border: 0.1em solid $color-grey-light;
-      background: $white-grey;
+      background: $color-off-white;
     }
   }
   /* ---------------------- Item: Drag the Words */
@@ -494,7 +494,7 @@ input, textarea {
     border: 1px solid $color-grey-light;
   }
   .h5p-drag-text [aria-grabbed] {
-    background-color: $white-grey;
+    background-color: $color-off-white;
   }
   /* Drag objects */
   .h5p-drag-text {
@@ -504,7 +504,7 @@ input, textarea {
     [aria-grabbed]:not(.ui-state-disabled):hover {
       border: 0.1em solid $color-grey-light;
       color: $color-grey-medium;
-      background: $white-grey;
+      background: $color-off-white;
     }
   }
   /* ---------------------- Item: Fill in the Blanks */
