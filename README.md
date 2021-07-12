@@ -91,7 +91,7 @@ There is a minor instance where the property `filter` utilises a hardcoded colou
 | Correct/Incorrect colours | (not applied to every instance) |
 | `$color-correct: #9dd8bb;`<br/>`$color-correct-medium: #47b47d;`<br/>`$color-correct-dark: #255c41;`<br/>`$color-incorrect: #f7d0d0;`<br/>`$color-incorrect-medium: #dd2e2e;`<br/>`$color-incorrect-dark: #b71c1c;`| |
 | Gamification colours | Arithmetic Quiz|
-|`color-game-1: #45a29f;`<br/>`$color-game-1-medium: #49837E;`<br/>`$color-game-2: #b71c1c;`<br/>`$color-game-3: #72518a;`||
+|`$color-game-1: #45a29f;`<br/>`$color-game-1-medium: #49837E;`<br/>`$color-game-2: #b71c1c;`<br/>`$color-game-3: #72518a;`||
 
 #### Notes
 - Some H5P content items retain the `:active` psuedo-class and require clicking elsewhere to return to the `link` state. As a result, is recommended to select a suitable accessible `hover/active` colour that is similar to the link colour to avoid a jarring experience for users.
