@@ -24,16 +24,16 @@
 | Content types | | |
 | ----------- | ----------- | ----------- |
 | Accordion | Drag and Drop | Mark the Words |
-Arithmetic Quiz | Drag the Words | Multiple Choice |
-Audio Recorder | Emoji Cloud | Multipoll |
-Branching Scenario | ~~Fill in the Blanks - N/A~~ | Quiz (Question Set) |
-~~Chart - N/A~~ | Flashcards | Single Choice Set |
-~~Collage - N/A~~ | Guess the Answer | Summary |
-~~Column - N/A~~ | Image Hotspot | ~~Text - N/A~~ |
-Course Presentation | Image Slider | True/False |
-Dialogue Cards | Interactive Book | Virtual Tour |
-Dictation | Interactive Video | Word Cloud |
-Documentation Tool | ~~KewAr Code - N/A~~ |
+Arithmetic Quiz | Drag the Words | Memory Game - N/A |
+Audio Recorder | Emoji Cloud | Multiple Choice |
+Branching Scenario | ~~Fill in the Blanks - N/A~~ | Multipoll |
+~~Chart - N/A~~ | Flashcards | Quiz (Question Set) |
+~~Collage - N/A~~ | Guess the Answer | Single Choice Set |
+~~Column - N/A~~ | Image Hotspot | Summary |
+Course Presentation | Image Slider | ~~Text - N/A~~ |
+Dialogue Cards | Interactive Book | True/False |
+Dictation | Interactive Video | Virtual Tour |
+Documentation Tool | ~~KewAr Code - N/A~~ | Word Cloud |
 
 *(**Note:** N/A = no individual styling necessary or item uses global styles)*
 
